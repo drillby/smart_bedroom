@@ -1,3 +1,4 @@
 env
 turn_pc_on/__pycache__
-turn_pc_on/images/*
+tests
+.vscode

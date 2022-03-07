@@ -1,8 +1,7 @@
-import wake_on_lan
-import face_recognition_
+from turn_pc_on import face_recognition_, wake_on_lan
 import json
 
-with open("wol_adresses.json") as file:
+with open("wol_adresses.json", "r") as file:
     data = json.load(file)
 
 if face_recognition_.recognize():

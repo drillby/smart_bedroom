@@ -13,7 +13,7 @@
 }
 ```
 
-For reference you can see wol_adresses.json in this folder.
+For reference you can see wol_adresses.json in same folder as main.py.
 
 ### Face recognition:
 
@@ -30,4 +30,4 @@ For reference you can see wol_adresses.json in this folder.
 }
 ```
 
-For reference you can see faces.json in this folder.
+For reference you can see faces.json in same folder as main.py.
