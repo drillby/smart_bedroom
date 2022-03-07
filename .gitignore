@@ -2,3 +2,4 @@ env
 turn_pc_on/__pycache__
 tests
 .vscode
+wake_on_lan/__pycache__

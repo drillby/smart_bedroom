@@ -6,7 +6,6 @@
 
 ```json
 {
-  "broadcast_ip": "ip",
   "macs": {
     "name": "mac"
   }
