@@ -1,7 +1,8 @@
 import json
 from typing import Tuple
-import face_recognition
+
 import cv2
+import face_recognition
 import numpy as np
 
 # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
@@ -44,7 +45,7 @@ def encode_faces() -> Tuple[list, list]:
     Returns:
         Tuple[list, list]: tuple of lists. list 1 - encoded faces, list 2 - names corresponding to faces
     """
-    with open("faces.json") as file:
+    with open("json/faces.json") as file:
         faces = json.load(file)
 
     if len(faces["path"]) != len(faces["name"]):
@@ -81,7 +82,6 @@ def recognize() -> bool:
     while True:
         # Grab a single frame of video
         ret, frame = video_capture.read()
-        # cv2.imshow("frame", frame)
 
         # Resize frame of video to 1/4 size for faster face recognition processing
         small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
